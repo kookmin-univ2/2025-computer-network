@@ -169,7 +169,7 @@ while True:
                     f"HTTP/1.1 204 No Content\r\n"
                     f"Date: {datetime.datetime.now():%Y-%m-%d %H:%M:%S}\r\nContent-Length: 0\r\n\r\n"
                 )
-                client_socket.send(response.encode())
+            client_socket.send(response.encode())
 
     finally:
         # socket close
